@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; Venkata Bhattaram | TINITIATE.COM 
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # Python Async Programming
 
