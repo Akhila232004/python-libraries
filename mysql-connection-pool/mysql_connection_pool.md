@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # MySql Connection Pool
 * A Python MySQL connection pool is a mechanism that manages a collection of pre-established connections to a MySQL database, making them available for reuse by application threads or processes.
