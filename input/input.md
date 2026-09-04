@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # `input()` Function
 * Reading keyboard input in Python can be done using various approaches, but one common method is by utilizing the `input()` function. The `input()` function allows you to prompt the user for text input through the keyboard and store the entered text as a string.
