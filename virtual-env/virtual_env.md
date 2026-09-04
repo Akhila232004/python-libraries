@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # Virtual Environment
 * A Python virtual environment is a self-contained directory that encapsulates a specific Python interpreter and its associated libraries.
