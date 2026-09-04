@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # Lambda
 * Lambdas Expressions or Lambdas are one liner syntax to create anonymous functions called Lambdas, They allow functionality and data to be passed around in a single line.
