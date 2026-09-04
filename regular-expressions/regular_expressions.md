@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # Regular Expressions
 * Regular expressions are string patterns to search in other strings.
