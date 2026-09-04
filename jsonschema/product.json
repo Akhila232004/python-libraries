@@ -1,0 +1,35 @@
+{
+  "product_id": 1001,
+  "product_name": "Wireless Noise-Cancelling Headphones",
+  "product_status": "ACTIVE",
+  "product_price": 549.99,
+  "effective_price_start_date": "2025-09-01T00:00:00Z",
+  "effective_price_end_date": "2025-12-31T23:59:59Z",
+  "quantity": 250,
+  "product_details": {
+    "product_category": "Electronics",
+    "supplier_details": {
+      "supplier": [
+        { "id": 1, "name": "Acme Audio Pvt Ltd" },
+        { "id": 2, "name": "ZenSupply Co." }
+      ]
+    }
+  },
+  "created_date": 20250815,
+  "updated_date": "2025-09-09",
+  "updated_time": 102530,
+  "product_history": {
+    "product_price_history": [
+      {
+        "price": 599.99,
+        "start_date": "2025-06-01T00:00:00Z",
+        "end_date": "2025-08-31T23:59:59Z"
+      },
+      {
+        "price": 549.99,
+        "start_date": "2025-09-01T00:00:00Z",
+        "end_date": "2025-12-31T23:59:59Z"
+      }
+    ]
+  }
+}

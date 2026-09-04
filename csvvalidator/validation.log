@@ -1,0 +1,116 @@
+2025-09-10 10:23:20,151 INFO CSV is valid
+2025-09-10 10:23:40,800 WARNING CSV is invalid. Found 2 exceptions.
+2025-09-10 10:23:40,800 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 2, 'column': 8, 'field': 'timestamp', 'value': '9/10/2025 12:00', 'record': ['zsdfgsadf', 'John', 'Doe', 'Male', '25', '10/9/2025', 'TRUE', '9/10/2025 12:00', 'john.doe@example.com', '87.5']}
+2025-09-10 10:23:40,800 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 3, 'column': 8, 'field': 'timestamp', 'value': '8/15/2025 09:30', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '5/8/2025', 'FALSE', '8/15/2025 09:30', 'jane.smith@example.org', '92']}
+2025-09-10 10:23:49,674 WARNING CSV is invalid. Found 2 exceptions.
+2025-09-10 10:23:49,674 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 2, 'column': 8, 'field': 'timestamp', 'value': '9/10/2025 12:00', 'record': ['zsdfgsadf', 'John', 'Doe', 'Male', '25', '10/9/2025', 'TRUE', '9/10/2025 12:00', 'john.doe@example.com', '87.5']}
+2025-09-10 10:23:49,674 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 3, 'column': 8, 'field': 'timestamp', 'value': '8/15/2025 09:30', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '5/8/2025', 'FALSE', '8/15/2025 09:30', 'jane.smith@example.org', '92']}
+2025-09-10 10:23:50,760 WARNING CSV is invalid. Found 2 exceptions.
+2025-09-10 10:23:50,760 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 2, 'column': 8, 'field': 'timestamp', 'value': '9/10/2025 12:00', 'record': ['zsdfgsadf', 'John', 'Doe', 'Male', '25', '10/9/2025', 'TRUE', '9/10/2025 12:00', 'john.doe@example.com', '87.5']}
+2025-09-10 10:23:50,761 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 3, 'column': 8, 'field': 'timestamp', 'value': '8/15/2025 09:30', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '5/8/2025', 'FALSE', '8/15/2025 09:30', 'jane.smith@example.org', '92']}
+2025-09-10 10:24:33,992 WARNING CSV is invalid. Found 2 exceptions.
+2025-09-10 10:24:33,992 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 2, 'column': 8, 'field': 'timestamp', 'value': '9/10/2025 12:00', 'record': ['12-1234567', 'John', 'Doe', 'Male', '25', '10/9/2025', 'assdf', '9/10/2025 12:00', 'john.doe@example.com', '87.5']}
+2025-09-10 10:24:33,992 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 3, 'column': 8, 'field': 'timestamp', 'value': '8/15/2025 09:30', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '5/8/2025', 'FALSE', '8/15/2025 09:30', 'jane.smith@example.org', '92']}
+2025-09-10 10:24:37,438 WARNING CSV is invalid. Found 2 exceptions.
+2025-09-10 10:24:37,438 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 2, 'column': 8, 'field': 'timestamp', 'value': '9/10/2025 12:00', 'record': ['12-1234567', 'John', 'Doe', 'Male', '25', '10/9/2025', 'assdf', '9/10/2025 12:00', 'john.doe@example.com', '87.5']}
+2025-09-10 10:24:37,438 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 3, 'column': 8, 'field': 'timestamp', 'value': '8/15/2025 09:30', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '5/8/2025', 'FALSE', '8/15/2025 09:30', 'jane.smith@example.org', '92']}
+2025-09-10 10:25:57,912 WARNING CSV is invalid. Found 2 exceptions.
+2025-09-10 10:25:57,912 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 2, 'column': 8, 'field': 'timestamp', 'value': '9/10/2025 12:00', 'record': ['12-1234567', 'John', 'Doe', 'Male', '25', '10/9/2025', 'assdf', '9/10/2025 12:00', 'john.doe@example.com', '87.5']}
+2025-09-10 10:25:57,912 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 3, 'column': 8, 'field': 'timestamp', 'value': '8/15/2025 09:30', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '5/8/2025', 'FALSE', '8/15/2025 09:30', 'jane.smith@example.org', '92']}
+2025-09-10 10:26:10,931 WARNING CSV is invalid. Found 2 exceptions.
+2025-09-10 10:26:10,931 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 2, 'column': 8, 'field': 'timestamp', 'value': '9/10/2025 12:00', 'record': ['12-1234567', 'John', 'Doe', 'Male', '25', '10/9/2025', 'TRUE', '9/10/2025 12:00', 'john.doe@example.com', '87.5']}
+2025-09-10 10:26:10,932 WARNING {'code': 'Timestamp must be in the format YYYY-MM-DD HH:MM:SS', 'message': 'Value check failed.', 'row': 3, 'column': 8, 'field': 'timestamp', 'value': '8/15/2025 09:30', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '5/8/2025', 'FALSE', '8/15/2025 09:30', 'jane.smith@example.org', '92']}
+2025-09-10 10:26:33,831 INFO CSV is valid
+2025-09-10 10:26:37,831 INFO CSV is valid
+2025-09-10 10:26:38,489 INFO CSV is valid
+2025-09-10 10:26:39,018 INFO CSV is valid
+2025-09-10 10:26:39,554 INFO CSV is valid
+2025-09-10 10:26:40,095 INFO CSV is valid
+2025-09-10 10:26:40,632 INFO CSV is valid
+2025-09-10 10:26:52,303 INFO CSV is valid
+2025-09-10 10:26:57,881 INFO CSV is valid
+2025-09-10 10:26:58,971 INFO CSV is valid
+2025-09-10 10:26:59,552 INFO CSV is valid
+2025-09-10 10:31:33,374 INFO CSV is valid
+2025-09-10 10:31:41,494 INFO CSV is valid
+2025-09-10 10:32:11,185 INFO CSV is valid
+2025-09-10 10:32:49,157 INFO CSV is valid
+2025-09-10 10:32:50,187 INFO CSV is valid
+2025-09-10 10:34:02,787 INFO CSV is valid
+2025-09-10 10:34:11,106 INFO CSV is valid
+2025-09-10 10:34:21,230 INFO CSV is valid
+2025-09-10 10:34:30,053 INFO CSV is valid
+2025-09-10 10:35:22,806 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 10:35:22,807 WARNING {'code': 'EX1', 'message': 'Invalid header', 'row': 1, 'record': ('sdfgdsfgdsfg', 'John', 'Doe', 'Male', '25', '10/09/2025', 'True', '2025-09-10 12:00:00', 'john.doe@example.com', '87.5'), 'missing': {'first_name', 'last_name', 'gender', 'timestamp', 'age', 'is_student', 'id', 'date', 'score', 'email'}, 'unexpected': {'87.5', 'John', '25', 'Doe', 'Male', 'True', '2025-09-10 12:00:00', '10/09/2025', 'john.doe@example.com', 'sdfgdsfgdsfg'}}
+2025-09-10 10:35:38,094 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 10:35:38,094 WARNING {'code': 'EX1', 'message': 'Invalid header', 'row': 1, 'record': ('12-1234567', 'John', 'Doe', 'Male', '25', '10/09/2025', 'True', '2025-09-10 12:00:00', 'john.doe@example.com', '87.5'), 'missing': {'first_name', 'last_name', 'score', 'age', 'gender', 'timestamp', 'email', 'date', 'is_student', 'id'}, 'unexpected': {'Male', 'True', 'John', '87.5', 'Doe', '2025-09-10 12:00:00', 'john.doe@example.com', '12-1234567', '25', '10/09/2025'}}
+2025-09-10 10:35:58,061 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 10:35:58,062 WARNING {'code': 'EX1', 'message': 'Invalid header', 'row': 1, 'record': ('12-1234567', 'John', 'Doe', 'Male', '25', '10/09/2025', 'True', '2025-09-10 12:00:00', 'john.doe@example.com', '87.5'), 'missing': {'gender', 'first_name', 'timestamp', 'age', 'date', 'id', 'last_name', 'email', 'score', 'is_student'}, 'unexpected': {'True', 'Male', '87.5', '12-1234567', '10/09/2025', '25', 'Doe', 'John', 'john.doe@example.com', '2025-09-10 12:00:00'}}
+2025-09-10 10:36:01,873 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 10:36:01,874 WARNING {'code': 'EX1', 'message': 'Invalid header', 'row': 1, 'record': ('12-1234567', 'John', 'Doe', 'Male', '25', '10/09/2025', 'True', '2025-09-10 12:00:00', 'john.doe@example.com', '87.5'), 'missing': {'id', 'is_student', 'gender', 'last_name', 'timestamp', 'first_name', 'date', 'age', 'score', 'email'}, 'unexpected': {'12-1234567', '25', 'Male', '10/09/2025', 'john.doe@example.com', '87.5', '2025-09-10 12:00:00', 'Doe', 'True', 'John'}}
+2025-09-10 10:37:45,019 INFO CSV is valid
+2025-09-10 10:38:49,875 INFO CSV is valid
+2025-09-10 10:39:12,583 INFO CSV is valid
+2025-09-10 10:41:22,902 INFO CSV is valid
+2025-09-10 10:50:46,524 INFO CSV is valid
+2025-09-10 10:51:18,767 INFO CSV is valid
+2025-09-10 10:51:28,996 INFO CSV is valid
+2025-09-10 10:51:30,454 INFO CSV is valid
+2025-09-10 10:51:31,110 INFO CSV is valid
+2025-09-10 10:51:31,539 INFO CSV is valid
+2025-09-10 10:51:51,246 INFO CSV is valid
+2025-09-10 10:54:05,381 INFO CSV is valid
+2025-09-10 10:54:24,136 INFO CSV is valid
+2025-09-10 10:54:30,235 INFO CSV is valid
+2025-09-10 10:54:40,682 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 10:54:40,682 WARNING {'code': 'EX8', 'message': 'Date must be in the format dd/mm/yyyy', 'row': 3, 'column': 6, 'field': 'date', 'value': '05/asdfas/2025', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '05/asdfas/2025', 'sdfsdf', '2025-08-15 09:30:00', 'jane.smith@example.org', '92.0']}
+2025-09-10 10:54:58,900 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 10:54:58,900 WARNING {'code': 'EX8', 'message': 'Date must be in the format dd/mm/yyyy', 'row': 3, 'column': 6, 'field': 'date', 'value': '05/asdfas/2025', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '05/asdfas/2025', 'sdfsdf', '2025-08-15 09:30:00', 'jane.smith@example.org', '92.0']}
+2025-09-10 10:55:45,113 INFO CSV is valid
+2025-09-10 10:55:46,278 INFO CSV is valid
+2025-09-10 10:55:46,999 INFO CSV is valid
+2025-09-10 10:55:47,521 INFO CSV is valid
+2025-09-10 10:56:03,016 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 10:56:03,017 WARNING {'code': 'EX8', 'message': 'Date must be in the format dd/mm/yyyy', 'row': 2, 'column': 6, 'field': 'date', 'value': '10/df/2025', 'record': ['12-1234567', 'John', 'Doe', 'sdfg', '25', '10/df/2025', 'True', '2025-09-10 12:00:00', 'john.doe@example.com', '87.5']}
+2025-09-10 10:58:02,512 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 10:58:02,512 WARNING {'code': 'EX8', 'message': 'Date must be in the format dd/mm/yyyy', 'row': 2, 'column': 6, 'field': 'date', 'value': '10/df/2025', 'record': ['121234567', 'John', 'Doe', 'sdfg', '25', '10/df/2025', 'True', '2025-09-10 12:00:00', 'john.doe@example.com', '87.5']}
+2025-09-10 10:58:16,467 INFO CSV is valid
+2025-09-10 10:58:24,373 INFO CSV is valid
+2025-09-10 10:58:25,542 INFO CSV is valid
+2025-09-10 10:59:48,876 INFO CSV is valid
+2025-09-10 10:59:57,522 INFO CSV is valid
+2025-09-10 10:59:58,510 INFO CSV is valid
+2025-09-10 10:59:59,046 INFO CSV is valid
+2025-09-10 10:59:59,476 INFO CSV is valid
+2025-09-10 10:59:59,907 INFO CSV is valid
+2025-09-10 11:00:05,061 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 11:00:05,076 WARNING {'code': 'EX8', 'message': 'Date must be in the format dd/mm/yyyy', 'row': 2, 'column': 6, 'field': 'date', 'value': '10/sdf/2025', 'record': ['12-1234567', 'John', 'Doe', 'Male', '25', '10/sdf/2025', 'True', '2025-09-10 12:00:00', 'john.doe', '87.5']}
+2025-09-10 11:00:11,490 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 11:00:11,491 WARNING {'code': 'EX8', 'message': 'Date must be in the format dd/mm/yyyy', 'row': 2, 'column': 6, 'field': 'date', 'value': '10/sdf/2025', 'record': ['12-1234567', 'John', 'Doe', 'Male', '25', '10/sdf/2025', 'True', '202dfg5-09-10 12:00:00', 'john.doe', '87.5']}
+2025-09-10 11:00:18,626 INFO CSV is valid
+2025-09-10 11:00:31,300 INFO CSV is valid
+2025-09-10 11:00:52,687 INFO CSV is valid
+2025-09-10 11:00:54,710 INFO CSV is valid
+2025-09-10 11:01:04,159 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 11:01:04,160 WARNING {'code': 'EX8', 'message': 'Date must be in the format dd/mm/yyyy', 'row': 3, 'column': 6, 'field': 'date', 'value': '05/0sdfsc8/2025', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '05/0sdfsc8/2025', 'False', '2025-08-15 09:30:00', 'jane.smith@example.org', '92.0']}
+2025-09-10 11:03:47,630 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 11:03:47,630 WARNING {'code': 'EX8', 'message': 'Date must be in the format dd/mm/yyyy', 'row': 3, 'column': 6, 'field': 'date', 'value': '05/0sdfsc8/2025', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '05/0sdfsc8/2025', 'False', '2025-08-15 09:30:00', 'jane.smith@example.org', '92.0']}
+2025-09-10 11:04:11,761 INFO CSV is valid
+2025-09-10 11:04:30,661 INFO CSV is valid
+2025-09-10 11:04:39,733 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 11:04:39,733 WARNING {'code': 'EX8', 'message': 'Date must be in the format dd/mm/yyyy', 'row': 3, 'column': 6, 'field': 'date', 'value': '05/0sdfsc8/2025', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '05/0sdfsc8/2025', 'False', '2025-08-15 09:30:00', 'jane.smith@example.org', '92.0']}
+2025-09-10 11:06:33,121 INFO CSV is valid
+2025-09-10 11:06:49,380 INFO CSV is valid
+2025-09-10 11:15:00,984 WARNING CSV is invalid. Found 1 exceptions.
+2025-09-10 11:15:00,984 WARNING {'code': 'EX8', 'message': 'Date must be in the format dd/mm/yyyy', 'row': 3, 'column': 6, 'field': 'date', 'value': '05/0sdfsc8/2025', 'record': ['15-9876543', 'Jane', 'Smith', 'Female', '30', '05/0sdfsc8/2025', 'False', '2025-08-15 09:30:00', 'jane.smith@example.org', '92.0']}
+2025-09-10 11:15:54,909 INFO CSV is valid
+2025-09-10 11:16:29,953 INFO CSV is valid
+2025-09-10 11:16:31,000 INFO CSV is valid
+2025-09-10 11:16:31,529 INFO CSV is valid
+2025-09-10 11:16:31,919 INFO CSV is valid
+2025-09-10 11:21:25,210 INFO CSV is valid
+2025-09-10 11:21:40,626 INFO CSV is valid
+2025-09-10 11:21:52,243 INFO CSV is valid
+2025-09-10 11:21:59,937 INFO CSV is valid
+2025-09-10 11:22:03,571 INFO CSV is valid
+2025-09-10 11:22:27,865 INFO CSV is valid

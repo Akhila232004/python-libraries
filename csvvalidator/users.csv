@@ -1,0 +1,3 @@
+id,first_name,last_name,gender,age,date,is_student,timestamp,email,score
+12-1234567,John,Doe,Male,25,10/09/2025,True,2025-09-10 12:00:00,john.doe@example.com,87.5
+15-9876543,Jane,Smith,Female,30,05/08/2025,False,2025-08-15 09:30:00,jane.smith@example.org,92.0

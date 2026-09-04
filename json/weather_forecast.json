@@ -1,0 +1,194 @@
+[
+  {
+    "Timepoint": 3,
+    "Cloudcover": 8,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 5,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 6,
+    "Cloudcover": 8,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 3,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 9,
+    "Cloudcover": 9,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 4,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 12,
+    "Cloudcover": 9,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 6,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 15,
+    "Cloudcover": 7,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 7,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 18,
+    "Cloudcover": 5,
+    "Seeing": 6,
+    "Sransparency": 4,
+    "Rh2m": 9,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 21,
+    "Cloudcover": 2,
+    "Seeing": 6,
+    "Sransparency": 4,
+    "Rh2m": 10,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 24,
+    "Cloudcover": 5,
+    "Seeing": 6,
+    "Sransparency": 4,
+    "Rh2m": 9,
+    "Lifted_index": -4
+  },
+  {
+    "Timepoint": 27,
+    "Cloudcover": 6,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 6,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 30,
+    "Cloudcover": 6,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 3,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 33,
+    "Cloudcover": 9,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 2,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 36,
+    "Cloudcover": 9,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 4,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 39,
+    "Cloudcover": 8,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 6,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 42,
+    "Cloudcover": 5,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 8,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 45,
+    "Cloudcover": 4,
+    "Seeing": 6,
+    "Sransparency": 4,
+    "Rh2m": 8,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 48,
+    "Cloudcover": 2,
+    "Seeing": 6,
+    "Sransparency": 4,
+    "Rh2m": 8,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 51,
+    "Cloudcover": 1,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 5,
+    "Lifted_index": -4
+  },
+  {
+    "Timepoint": 54,
+    "Cloudcover": 3,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 3,
+    "Lifted_index": -4
+  },
+  {
+    "Timepoint": 57,
+    "Cloudcover": 8,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 3,
+    "Lifted_index": -4
+  },
+  {
+    "Timepoint": 60,
+    "Cloudcover": 8,
+    "Seeing": 6,
+    "Sransparency": 3,
+    "Rh2m": 6,
+    "Lifted_index": -4
+  },
+  {
+    "Timepoint": 63,
+    "Cloudcover": 9,
+    "Seeing": 6,
+    "Sransparency": 4,
+    "Rh2m": 11,
+    "Lifted_index": -4
+  },
+  {
+    "Timepoint": 66,
+    "Cloudcover": 9,
+    "Seeing": 6,
+    "Sransparency": 6,
+    "Rh2m": 12,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 69,
+    "Cloudcover": 9,
+    "Seeing": 6,
+    "Sransparency": 5,
+    "Rh2m": 12,
+    "Lifted_index": -1
+  },
+  {
+    "Timepoint": 72,
+    "Cloudcover": 9,
+    "Seeing": 6,
+    "Sransparency": 6,
+    "Rh2m": 12,
+    "Lifted_index": -1
+  }
+]

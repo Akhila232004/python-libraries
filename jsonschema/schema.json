@@ -1,0 +1,123 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+        "product_id",
+        "product_name",
+        "product_status",
+        "product_price",
+        "effective_price_start_date",
+        "effective_price_end_date",
+        "quantity",
+        "product_details",
+        "created_date",
+        "updated_date",
+        "updated_time",
+        "product_history"
+    ],
+    "properties": {
+        "product_id": {
+            "type": "integer"
+        },
+        "product_name": {
+            "type": "string"
+        },
+        "product_status": {
+            "type": "string"
+        },
+        "product_price": {
+            "type": "number"
+        },
+        "effective_price_start_date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "effective_price_end_date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "quantity": {
+            "type": "integer"
+        },
+        "product_details": {
+            "type": "object",
+            "required": [
+                "product_category",
+                "supplier_details"
+            ],
+            "properties": {
+                "product_category": {
+                    "type": "string"
+                },
+                "supplier_details": {
+                    "type": "object",
+                    "required": [
+                        "supplier"
+                    ],
+                    "properties": {
+                        "supplier": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "required": [
+                                    "id",
+                                    "name"
+                                ],
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "created_date": {
+            "type": "integer"
+        },
+        "updated_date": {
+            "type": "string",
+            "format": "date"
+        },
+        "updated_time": {
+            "type": "integer"
+        },
+        "product_history": {
+            "type": "object",
+            "required": [
+                "product_price_history"
+            ],
+            "properties": {
+                "product_price_history": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "price",
+                            "start_date",
+                            "end_date"
+                        ],
+                        "properties": {
+                            "price": {
+                                "type": "number"
+                            },
+                            "start_date": {
+                                "type": "string",
+                                "format": "date-time"
+                            },
+                            "end_date": {
+                                "type": "string",
+                                "format": "date-time"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+[2025-09-08 16:30:00,455] tinitiate-file: ERROR    This is an error message
+[2025-09-08 16:30:00,455] tinitiate-file: CRITICAL This is a critical message
+[2025-09-08 16:30:00,455] tinitiate-file: ERROR    Functional Inputs: n1 = a || n2 = 22
+[2025-09-08 16:30:00,455] tinitiate-file: ERROR    TypeError can only concatenate str (not "int") to str
+[2025-09-08 16:30:00,455] tinitiate-file: ERROR    OOP Inputs: n1 = 22 || n2 = bbb
+[2025-09-08 16:30:00,457] tinitiate-file: ERROR    TypeError unsupported operand type(s) for +: 'int' and 'str'

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Products xmlns="http://www.example.com/product">
+  <Product>
+    <ID>1</ID>
+    <Name>Laptop</Name>
+    <Price>750.00</Price>
+    <Category>Electronics</Category>
+  </Product>
+  <Product>
+    <ID>2</ID>
+    <Name>Table</Name>
+    <Price>120.50</Price>
+    <Category>Furniture</Category>
+  </Product>
+</Products>

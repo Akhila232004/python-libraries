@@ -1,0 +1,14 @@
+Hello, File I/O!
+This is a tiny demo file.
+It has a few lines you can read.
+
+apples bananas oranges
+1 2 3 4 5
+
+START
+alpha
+beta
+gamma
+END
+
+Goodbye.
