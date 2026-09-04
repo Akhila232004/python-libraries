@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # Iterators and Generators
 * Iterators and generators are two fundamental concepts in Python that allow you to work with sequences of data in a more efficient and flexible way.
