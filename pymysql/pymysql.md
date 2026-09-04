@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # `pymysql`
 * Python provides several modules to connect to databases such as Oracle, MySQL, SQL Server, PostgreSQL, and more. For MySQL/MariaDB, the most commonly used package is `pymysql`, a third-party Python module.
