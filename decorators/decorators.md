@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # Decorators
 * Decorators are a powerful feature in Python that allow you to modify the behavior of functions, classes, or modules without having to modify their source code.
