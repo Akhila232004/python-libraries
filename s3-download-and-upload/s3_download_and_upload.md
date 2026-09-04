@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # S3 Download and Upload
 * S3 (Simple Storage Service) is AWS’s object storage, which allows you to store files (“objects”) inside buckets.
