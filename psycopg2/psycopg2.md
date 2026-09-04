@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # `psycopg2`
 * Python provides several modules to connect to databases such as Oracle, MySQL, SQL Server, PostgreSQL, and more. For PostgreSQL, the most commonly used package is `psycopg2`, a third-party Python module.
