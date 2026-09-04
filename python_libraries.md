@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # Python Libraries
 * Libraries in Python are collections of pre-written code that users can include in their projects to perform various tasks without needing to write code from scratch.
