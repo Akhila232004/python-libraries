@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # Pytest
 * **pytest**: `pytest` is a popular testing framework for Python that simplifies writing and executing tests. It provides a clean and intuitive syntax for writing test cases and offers various features to make testing more efficient and organized.
