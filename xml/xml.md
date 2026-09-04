@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
 
 # XML
 * XML (Extensible Markup Language) is a markup language used for representing structured data in a way that is both human-readable and machine-readable.
