@@ -23,4 +23,4 @@ l_schema = {
 }
 
 schema_str = json.dumps(l_schema)
-schema = avro.schema.Parse(schema_str)
+schema = avro.schema.parse(schema_str)
