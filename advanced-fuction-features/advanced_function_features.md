@@ -14,6 +14,8 @@ def Add2Nums(Num1,Num2):
     return Num1+Num2;
 
 print(Add2Nums(1,2))
+
+##OUTPUT: 3
 ```
 
 ## Nested Function
@@ -31,6 +33,8 @@ def add2numsAndFive(num1,num2):
 
 # Call the function `add2numsAndFive`
 print(add2numsAndFive(1,2))
+
+##Output: 8
 ```
 
 ## Passing function as parameter to another function
@@ -57,6 +61,9 @@ def addTwoNums(func):
 # Calling "addTwoNums" function with "add5" function as input parameter
 print(addTwoNums(add5))
 print(addTwoNums(addSpl))
+
+##OUTPUT: 6
+          3
 ```
 
 ## Function returns another function as output
@@ -102,6 +109,8 @@ def add3Nums_1(Num1,Num2,Num3):
 
 # Called the add3Nums_1 function
 print(add3Nums_1(1,2,3))
+
+##OUTPUT: 6
 ```
 
 ##### [Back To Contents](../../README.md)
