@@ -19,6 +19,16 @@ python -m pip install avro-python3
 
 ## Avro Schema Generator
 ```python
+# ==============================================================================
+#  Organization : TINITIATE TECHNOLOGIES PVT LTD
+#  Website      : tinitiate.com
+#  Script Title : Python Tutorial
+#  Description  : Avro Schema Generator
+#  Author       : Team Tinitiate
+# ==============================================================================
+
+
+
 import avro.schema
 import json
 
@@ -34,7 +44,7 @@ l_schema = {
 }
 
 schema_str = json.dumps(l_schema)
-schema = avro.schema.Parse(schema_str)
+schema = avro.schema.parse(schema_str)
 ```
 
 ## Write Avro File
