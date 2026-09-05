@@ -63,7 +63,7 @@ print(addTwoNums(add5))
 print(addTwoNums(addSpl))
 
 ##OUTPUT: 6
-          3
+##OUTPUT: 3
 ```
 
 ## Function returns another function as output
