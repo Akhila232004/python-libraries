@@ -563,64 +563,332 @@ asyncio.run(main())
 * **Async generators** use `yield` inside `async def` — the simplest way to create async iterators.
 
 ```python
+# ==============================================================================
+#  Organization : TINITIATE TECHNOLOGIES PVT LTD
+#  Website      : tinitiate.com
+#  Script Title : Python Tutorial
+#  Description  : Async iterators and generators — __aiter__, __anext__,
+#                 async def with yield, async comprehensions, aiter/anext builtins
+#  Author       : Team Tinitiate
+# ==============================================================================
+
 import asyncio
 
-# Async generator — simulates data streaming from a source
-async def stream_records(count):
+
+# =============================================================================
+# 1. Async generator — async def + yield (simplest async iterator)
+# =============================================================================
+
+async def countdown(n):
+    """Yields numbers from n down to 1, with a delay between each."""
+    for i in range(n, 0, -1):
+        await asyncio.sleep(0.2)
+        yield i
+
+
+async def main_basic_gen():
+    async for value in countdown(5):
+        print(f"  Countdown: {value}")
+
+
+print("--- basic async generator ---")
+asyncio.run(main_basic_gen())
+
+
+# =============================================================================
+# 2. Async generator simulating data streaming
+# =============================================================================
+
+async def stream_events(topic, count):
+    """Simulates events arriving one-by-one from a message broker."""
     for i in range(count):
-        await asyncio.sleep(0.3)        # Simulate data arriving asynchronously
-        yield {"id": i, "value": i * 10}
+        await asyncio.sleep(0.15)
+        yield {
+            "topic": topic,
+            "seq": i,
+            "payload": f"msg-{i}"
+        }
 
-async def main():
-    async for record in stream_records(5):
-        print(f"Received: {record}")
 
-asyncio.run(main())
-```
+async def main_stream():
+    async for event in stream_events("orders", 4):
+        print(f"  Received: {event}")
 
-* **Async iterator class**:
 
-```python
-import asyncio
+print("\n--- streaming events ---")
+asyncio.run(main_stream())
+
+
+# =============================================================================
+# 3. Async generator with exception handling inside the generator
+# =============================================================================
+
+async def safe_stream(items):
+    for item in items:
+        try:
+            await asyncio.sleep(0.1)
+
+            if item == "bad":
+                raise ValueError(f"Bad item: {item}")
+
+            yield item
+
+        except ValueError as e:
+            print(f"  [generator] skipping error: {e}")
+
+
+async def main_safe_stream():
+    data = ["ok-1", "bad", "ok-2", "bad", "ok-3"]
+
+    async for item in safe_stream(data):
+        print(f"  Processed: {item}")
+
+
+print("\n--- async generator with error handling ---")
+asyncio.run(main_safe_stream())
+
+
+# =============================================================================
+# 4. Async generator with send() / throw() / aclose()
+# =============================================================================
+
+async def accumulator():
+    """Receives values via asend() and yields running totals."""
+    total = 0
+
+    while True:
+        value = yield total
+
+        if value is None:
+            break
+
+        total += value
+        await asyncio.sleep(0.05)
+
+
+async def main_asend():
+    gen = accumulator()
+
+    total = await gen.asend(None)
+    print(f"  Initial total: {total}")
+
+    for n in [10, 20, 30]:
+        total = await gen.asend(n)
+        print(f"  After sending {n}: total = {total}")
+
+    await gen.aclose()
+
+
+print("\n--- async generator asend / aclose ---")
+asyncio.run(main_asend())
+
+
+# =============================================================================
+# 5. Class-based async iterator — __aiter__ + __anext__
+# =============================================================================
 
 class AsyncRange:
-    def __init__(self, start, stop):
-        self.current = start
-        self.stop    = stop
+    """Async version of range() — pauses between each number."""
+
+    def __init__(self, start, stop, step=1):
+        self._current = start
+        self._stop = stop
+        self._step = step
 
     def __aiter__(self):
         return self
 
     async def __anext__(self):
-        if self.current >= self.stop:
+        if self._current >= self._stop:
             raise StopAsyncIteration
+
         await asyncio.sleep(0.1)
-        value         = self.current
-        self.current += 1
+
+        value = self._current
+        self._current += self._step
+
         return value
 
-async def main():
-    async for value in AsyncRange(0, 5):
-        print(f"Value: {value}")
 
-asyncio.run(main())
-```
+async def main_class_iter():
+    async for n in AsyncRange(0, 10, 2):
+        print(f"  AsyncRange: {n}")
 
-* **Collecting async generator output with a list comprehension** (Python 3.10+):
 
-```python
-import asyncio
+print("\n--- class-based async iterator ---")
+asyncio.run(main_class_iter())
+
+
+# =============================================================================
+# 6. Async class with __aiter__ returning a separate async iterator object
+# =============================================================================
+
+class DatabaseRows:
+    """Iterable that is NOT its own iterator — supports multiple concurrent iterations."""
+
+    def __init__(self, table, count):
+        self.table = table
+        self.count = count
+
+    def __aiter__(self):
+        return DatabaseRowIterator(self.table, self.count)
+
+
+class DatabaseRowIterator:
+
+    def __init__(self, table, count):
+        self.table = table
+        self.count = count
+        self._cursor = 0
+
+    def __aiter__(self):
+        return self
+
+    async def __anext__(self):
+        if self._cursor >= self.count:
+            raise StopAsyncIteration
+
+        await asyncio.sleep(0.05)
+
+        row = {
+            "table": self.table,
+            "row_id": self._cursor,
+            "data": f"row-{self._cursor}"
+        }
+
+        self._cursor += 1
+
+        return row
+
+
+async def main_db_iter():
+    rows = DatabaseRows("users", 4)
+
+    async for row in rows:
+        print(f"  {row}")
+
+
+print("\n--- class iterator vs iterable separation ---")
+asyncio.run(main_db_iter())
+
+
+# =============================================================================
+# 7. Async comprehensions and expressions
+# =============================================================================
 
 async def async_squares(n):
     for i in range(n):
-        await asyncio.sleep(0.05)
+        await asyncio.sleep(0.02)
         yield i * i
 
-async def main():
-    squares = [x async for x in async_squares(6)]
-    print(squares)  # [0, 1, 4, 9, 16, 25]
 
-asyncio.run(main())
+async def main_comprehensions():
+
+    # Async list comprehension
+    squares = [x async for x in async_squares(6)]
+    print(f"  squares: {squares}")
+
+    # Async set comprehension
+    unique = {x async for x in async_squares(5)}
+    print(f"  unique squares: {unique}")
+
+    # Async dictionary comprehension
+    # enumerate() cannot directly consume an async generator,
+    # so build the mapping using an async for loop.
+    mapping = {}
+
+    i = 0
+
+    async for x in async_squares(4):
+        mapping[i] = x
+        i += 1
+
+    print(f"  mapping: {mapping}")
+
+    # Async generator expression — lazy evaluation
+    gen = (
+        x
+        async for x in async_squares(4)
+        if x > 2
+    )
+
+    results = []
+
+    async for val in gen:
+        results.append(val)
+
+    print(f"  filtered: {results}")
+
+
+print("\n--- async comprehensions ---")
+asyncio.run(main_comprehensions())
+
+
+# =============================================================================
+# 8. aiter() and anext() — Python 3.10+ built-in shortcuts
+# =============================================================================
+
+async def main_aiter_anext():
+
+    gen = countdown(3)
+    ait = aiter(gen)
+
+    first = await anext(ait)
+    second = await anext(ait)
+    default = await anext(ait, "no more")
+    done = await anext(ait, "no more")
+
+    print(
+        f"  first={first}, "
+        f"second={second}, "
+        f"default={default}, "
+        f"done={done}"
+    )
+
+
+print("\n--- aiter() / anext() built-ins (Python 3.10+) ---")
+asyncio.run(main_aiter_anext())
+
+
+# =============================================================================
+# 9. Chaining async generators — pipeline of generators
+# =============================================================================
+
+async def produce_numbers(n):
+    for i in range(n):
+        await asyncio.sleep(0.05)
+        yield i
+
+
+async def square(gen):
+    async for n in gen:
+        await asyncio.sleep(0.02)
+        yield n * n
+
+
+async def filter_even(gen):
+    async for n in gen:
+        if n % 2 == 0:
+            yield n
+
+
+async def main_pipeline():
+    pipeline = filter_even(
+        square(
+            produce_numbers(10)
+        )
+    )
+
+    results = [n async for n in pipeline]
+
+    print(
+        f"  Pipeline (even squares of 0..9): {results}"
+    )
+
+
+print("\n--- async generator pipeline ---")
+asyncio.run(main_pipeline())
+
 ```
 
 ## asyncio Streams — TCP Server and Client
@@ -680,35 +948,323 @@ asyncio.run(main())
 * Pass `None` as the executor to use the event loop's built-in default `ThreadPoolExecutor`.
 
 ```python
+# ==============================================================================
+#  Organization : TINITIATE TECHNOLOGIES PVT LTD
+#  Website      : tinitiate.com
+#  Script Title : Running sync code from async — run_in_executor(),
+#                 asyncio.to_thread(), ThreadPoolExecutor, ProcessPoolExecutor,
+#                 mixing sync and async, CPU-bound work
+#  Author       : Team Tinitiate
+# ==============================================================================
+
 import asyncio
 import time
+import math
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 
+
+# =============================================================================
+# Sync functions — these BLOCK if called directly in async code
+# =============================================================================
+
 def blocking_io(name, duration):
-    time.sleep(duration)               # Blocking — but safe in a thread
-    return f"{name} done after {duration}s"
+    """Simulates blocking I/O: legacy SDK, file read, JDBC driver, etc."""
+    time.sleep(duration)
+    return f"{name} completed in {duration}s"
 
-def cpu_bound(n):
-    return sum(i * i for i in range(n))
 
-async def main():
+def cpu_heavy(n):
+    """CPU-bound computation — benefits from ProcessPoolExecutor."""
+    result = sum(math.factorial(i) for i in range(n))
+
+    # Avoid converting the extremely large integer to a string.
+    # Python 3.11+ limits huge integer-to-string conversions.
+    digits = int(result.bit_length() * math.log10(2)) + 1
+
+    return (
+        f"factorial sum up to {n} computed successfully "
+        f"({digits} digits)"
+    )
+
+
+def sync_transform(data):
+    """Simulates a blocking data transformation (e.g. calling a C extension)."""
+    time.sleep(0.1)
+    return [x * 2 for x in data]
+
+
+# =============================================================================
+# 1. run_in_executor — ThreadPoolExecutor for blocking I/O
+#    The event loop is NOT blocked; other coroutines continue running.
+# =============================================================================
+
+async def main_thread_pool():
     loop = asyncio.get_event_loop()
 
-    # Thread pool — best for blocking I/O
     with ThreadPoolExecutor(max_workers=4) as pool:
-        result = await loop.run_in_executor(pool, blocking_io, "File-read", 1)
-        print(result)
+        # Single call
+        result = await loop.run_in_executor(
+            pool,
+            blocking_io,
+            "Task-A",
+            1
+        )
 
-    # asyncio.to_thread — Python 3.9+ shortcut for thread pool
-    result = await asyncio.to_thread(blocking_io, "API-call", 1)
-    print(result)
+        print(f"  {result}")
 
-    # Process pool — for CPU-bound work (true parallelism, bypasses GIL)
-    with ProcessPoolExecutor() as pool:
-        result = await loop.run_in_executor(pool, cpu_bound, 1_000_000)
-        print(f"Sum of squares: {result}")
+        # Multiple blocking calls concurrently
+        tasks = [
+            loop.run_in_executor(
+                pool,
+                blocking_io,
+                f"Task-{i}",
+                0.5
+            )
+            for i in range(4)
+        ]
 
-asyncio.run(main())
+        results = await asyncio.gather(*tasks)
+
+        for r in results:
+            print(f"  {r}")
+
+
+# =============================================================================
+# 2. asyncio.to_thread — Python 3.9+ shortcut for thread pool
+#    Simpler API; uses a default thread pool managed by the event loop.
+# =============================================================================
+
+async def main_to_thread():
+    # Single call
+    result = await asyncio.to_thread(
+        blocking_io,
+        "B",
+        0.5
+    )
+
+    print(f"  {result}")
+
+    # Concurrent blocking calls with gather
+    tasks = [
+        asyncio.to_thread(
+            blocking_io,
+            f"file-{i}",
+            0.3
+        )
+        for i in range(3)
+    ]
+
+    results = await asyncio.gather(*tasks)
+
+    for r in results:
+        print(f"  {r}")
+
+
+# =============================================================================
+# 3. ProcessPoolExecutor — for CPU-bound work
+#    Bypasses the GIL by running each worker in a separate OS process.
+#    Functions must be picklable and defined at module level.
+# =============================================================================
+
+async def main_process_pool():
+    loop = asyncio.get_event_loop()
+
+    with ProcessPoolExecutor(max_workers=2) as pool:
+        # Run two CPU-heavy computations in separate processes
+        r1, r2 = await asyncio.gather(
+            loop.run_in_executor(
+                pool,
+                cpu_heavy,
+                5000
+            ),
+            loop.run_in_executor(
+                pool,
+                cpu_heavy,
+                4000
+            ),
+        )
+
+        print(f"  Process 1: {r1}")
+        print(f"  Process 2: {r2}")
+
+
+# =============================================================================
+# 4. Default executor — None uses the loop's built-in ThreadPoolExecutor
+# =============================================================================
+
+async def main_default_executor():
+    loop = asyncio.get_event_loop()
+
+    result = await loop.run_in_executor(
+        None,
+        blocking_io,
+        "default-pool",
+        0.5
+    )
+
+    print(f"  {result}")
+
+
+# =============================================================================
+# 5. Mixing sync and async in a pipeline
+#    Use case: async fetch → sync transform → async save
+# =============================================================================
+
+async def async_fetch(source):
+    print(f"  [fetch] fetching from {source}")
+
+    await asyncio.sleep(0.2)
+
+    return list(range(5))
+
+
+async def async_save(data, destination):
+    print(f"  [save] saving {len(data)} items to {destination}")
+
+    await asyncio.sleep(0.1)
+
+    print("  [save] done")
+
+
+async def pipeline(source, destination):
+    raw = await async_fetch(source)
+
+    processed = await asyncio.to_thread(
+        sync_transform,
+        raw
+    )
+
+    await async_save(
+        processed,
+        destination
+    )
+
+
+async def main_pipeline():
+    await asyncio.gather(
+        pipeline(
+            "api://data-1",
+            "db://table-1"
+        ),
+        pipeline(
+            "api://data-2",
+            "db://table-2"
+        ),
+    )
+
+
+# =============================================================================
+# 6. Custom executor per task type — separate pools for I/O and CPU
+# =============================================================================
+
+async def main_multi_executor():
+    loop = asyncio.get_event_loop()
+
+    io_pool = ThreadPoolExecutor(
+        max_workers=8,
+        thread_name_prefix="io"
+    )
+
+    cpu_pool = ProcessPoolExecutor(
+        max_workers=2
+    )
+
+    try:
+        io_tasks = [
+            loop.run_in_executor(
+                io_pool,
+                blocking_io,
+                f"io-{i}",
+                0.3
+            )
+            for i in range(4)
+        ]
+
+        cpu_tasks = [
+            loop.run_in_executor(
+                cpu_pool,
+                cpu_heavy,
+                3000
+            )
+            for _ in range(2)
+        ]
+
+        io_results, cpu_results = await asyncio.gather(
+            asyncio.gather(*io_tasks),
+            asyncio.gather(*cpu_tasks),
+        )
+
+        print("  I/O results:")
+
+        for r in io_results:
+            print(f"    {r}")
+
+        print("  CPU results:")
+
+        for r in cpu_results:
+            print(f"    {r}")
+
+    finally:
+        io_pool.shutdown(wait=False)
+        cpu_pool.shutdown(wait=False)
+
+
+# =============================================================================
+# 7. asyncio.loop.set_default_executor — replace the default thread pool
+# =============================================================================
+
+async def main_custom_default():
+    loop = asyncio.get_event_loop()
+
+    loop.set_default_executor(
+        ThreadPoolExecutor(
+            max_workers=16
+        )
+    )
+
+    result = await asyncio.to_thread(
+        blocking_io,
+        "custom-default",
+        0.2
+    )
+
+    print(f"  {result}")
+
+
+# =============================================================================
+# Main function
+# =============================================================================
+
+async def main():
+    print("--- ThreadPoolExecutor ---")
+    await main_thread_pool()
+
+    print("\n--- asyncio.to_thread (Python 3.9+) ---")
+    await main_to_thread()
+
+    print("\n--- ProcessPoolExecutor ---")
+    await main_process_pool()
+
+    print("\n--- default executor (None) ---")
+    await main_default_executor()
+
+    print("\n--- mixed sync/async pipeline ---")
+    await main_pipeline()
+
+    print("\n--- custom I/O + CPU executor pools ---")
+    await main_multi_executor()
+
+    print("\n--- set_default_executor ---")
+    await main_custom_default()
+
+
+# =============================================================================
+# Program entry point
+# =============================================================================
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
 ```
 
 ## Real-World Pattern: Concurrent HTTP Requests (aiohttp)
