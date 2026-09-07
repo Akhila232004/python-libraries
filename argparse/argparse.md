@@ -1,4 +1,5 @@
-# Python Tutorial
+# Python Tutorial![Python Tinitiate Image](https://github.com/Akhila232004/python/blob/main/python_tinitiate.png)
+
 &copy; TINITIATE.COM
 
 ##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
