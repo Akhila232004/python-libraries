@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # Pandas
 * The `pandas` library is a powerful library for data manipulation and analysis in Python.
@@ -1189,7 +1189,7 @@ print("\nConverted Series (Asia/Tokyo):")
 print(dates_tokyo)
 ```
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
