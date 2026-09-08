@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # Poetry
 * Poetry is a modern tool for managing Python **dependencies, environments, and packaging**.  
@@ -219,7 +219,7 @@ jobs:
 - Use `poetry export` when targeting Docker/cloud or legacy systems.
 - Stick to **`poetry run`** for commands to ensure correct environment.
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
