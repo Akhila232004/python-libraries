@@ -2,7 +2,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # Collections
 * Python Collections are data structures to store data, Similar to the built-ins like list, dict, set, tuple etc. These module based collections provide additional features. They are part of the **collections** module.
@@ -153,7 +153,7 @@ print(e1.dept)
 print(e1.sal)
 ```
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
