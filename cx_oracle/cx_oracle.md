@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # `cx_Oracle`
 * Python provides several modules to connect to databases such as Oracle, MySQL, SQL Server, PostgreSQL, and more. For Oracle, the most commonly used package is `cx_Oracle`, a third-party Python module.
@@ -89,7 +89,7 @@ connection.close()
 print("Connection closed.")
 ```
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
