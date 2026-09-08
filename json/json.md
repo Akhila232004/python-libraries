@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # JSON Module
 * The `json` module provides a simple and easy-to-use API for working with JSON data.
@@ -169,7 +169,7 @@ with open('C:/tinitiate/weather_forecast.json', 'w') as f:
   json.dump(dataseries, f, indent=2)
 ```
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
