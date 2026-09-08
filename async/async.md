@@ -1,9 +1,9 @@
 ![Python Tinitiate Image](https://github.com/Akhila232004/python/blob/main/python_tinitiate.png)
 
 # Python Tutorial
-&copy; Venkata Bhattaram | TINITIATE.COM 
+&copy;TINITIATE.COM 
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # Python Async Programming
 
@@ -1327,7 +1327,7 @@ async def main():
 asyncio.run(main())
 ```
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
