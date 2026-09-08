@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # Lambda
 * Lambdas Expressions or Lambdas are one liner syntax to create anonymous functions called Lambdas, They allow functionality and data to be passed around in a single line.
@@ -101,7 +101,7 @@ mulData = reduce((lambda x,y:x*y),range(1,10))
 print(mulData)
 ```
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
