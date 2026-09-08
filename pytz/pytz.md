@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # Pytz
 * The `pytz` module provides support for working with timezones in Python.
@@ -65,7 +65,7 @@ print('india_date timezone', india_date.tzinfo)
 >Here is a full list of TimeZone values that can be used 
 >https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
