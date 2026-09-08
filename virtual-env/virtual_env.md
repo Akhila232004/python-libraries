@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # Virtual Environment
 * A Python virtual environment is a self-contained directory that encapsulates a specific Python interpreter and its associated libraries.
@@ -78,7 +78,7 @@ python -m venv /path/to/venv
 * **Disk Space**: Creating multiple virtual environments can consume disk space.
 * **Global Installations**: Not suitable for global installations of system-wide tools.
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
