@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # Python Libraries
 * Libraries in Python are collections of pre-written code that users can include in their projects to perform various tasks without needing to write code from scratch.
@@ -53,7 +53,7 @@ pip install requests → requests is a library made up of several modules and pa
 * Python libraries are powerful tools that extend the capabilities of Python and enable developers to build complex applications efficiently.
 * By leveraging standard and third-party libraries, developers can focus on creating innovative solutions without getting bogged down by implementing basic functionality from scratch.
 
-##### [Back To Contents](../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
