@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # S3 Download and Upload
 * S3 (Simple Storage Service) is AWS’s object storage, which allows you to store files (“objects”) inside buckets.
@@ -76,7 +76,7 @@ if __name__ == '__main__' :main()
 # upload_my_file("python-100", "cbuser1/scripts", "/SyntaxBoard/aws-scripts/test.txt", "test.txt")
 ```
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
