@@ -2,7 +2,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # CSV Module
 * Python `csv` module provides a simple way to read and write Comma-Separated Values (CSV) files. 
@@ -118,7 +118,7 @@ with open('C:/tinitiate/code/python/csv/data.csv', 'r') as csv_file:
             csv_writer.writerow(line)
 ```
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
