@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # MySql Connection Pool
 * A Python MySQL connection pool is a mechanism that manages a collection of pre-established connections to a MySQL database, making them available for reuse by application threads or processes.
@@ -129,7 +129,7 @@ print("\nDone. All connections returned to the pool.")
 * `.close()` on pooled connections returns them to the pool (it doesn’t sever the TCP connection).
 * If you try to exceed `pool_size`, the connector raises `mysql.connector.errors.PoolError`.
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
