@@ -3,7 +3,7 @@
 # Python Tutorial
 &copy; TINITIATE.COM
 
-##### [Back To Contents](https://github.com/tinitiateprime/python/blob/main/README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 
 # ConfigParser
 * Configuration files are usually plain text files that store settings and parameters for a program. 
@@ -97,7 +97,7 @@ print(f"file_name: {file_name}")
 print(f"file_path: {file_path}")
 ```
 
-##### [Back To Contents](../../README.md)
+##### [Back To Contents](https://github.com/Akhila232004/python/blob/main/README.md)
 ***
 | &copy; TINITIATE.COM |
 |----------------------|
